@@ -11,10 +11,6 @@ var BaseStream = Object.create({},{
   }
 });
 
-var CounterStream = Object.create(BaseStream,{
-
-});
-
 var CollectionStream = Object.create(BaseStream, {
   entriesStoreName: {
     get: function(){
@@ -37,9 +33,5 @@ var CollectionStream = Object.create(BaseStream, {
     }
   }
 });
-exports.defineCounterStream=function(name, type){
-    var stream=Object.create(CounterStream);
-    stream.name=name;
-    stream.type=type;
-    return stream;
-};
+
+exports.BaseStream = BaseStream;
