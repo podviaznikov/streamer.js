@@ -1,10 +1,9 @@
 /**(c) 2011 Enginimation Studio (http://enginimation.com). May be freely distributed under the MIT license.*/
 /*global Backbone: true, io: true */
 // Backbone events: create, read, update, delete
-
 "use strict";
 var Streamer = {
-  io : window.io,
+  io: window.io,
   methods:{
     CREATE: 'create',
     READ:   'read',
@@ -66,6 +65,7 @@ Streamer.Model = Backbone.Model.extend({
 //Counter model. Listen for the `increment` event on server. Namespace should be urlRoot of this model.
 // For updating counter you can create new model or use existing one and call `save`.
 Streamer.CounterModel = Streamer.Model.extend({
+
   sync: function(method, model, options){
     if(Streamer.methods.CREATE === method || Streamer.methods.UPDATE === method){
       console.log('method',method)

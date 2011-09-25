@@ -1,0 +1,15 @@
+{
+  "author": "Enginimation Studio <hello@enginimation.com> (http://enginimation.com)",
+  "name": "streamer.js",
+  "description": "Library for streaming data from server-to-browser and vice versa",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/enginimation/streamer.js.git"
+  },
+  "engines": {
+    "node": "~v0.4.9"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
